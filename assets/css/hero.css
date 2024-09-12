@@ -1,0 +1,91 @@
+.hero__wrapper {
+    margin: 69px 24px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__wrapper {
+        margin: 0 264px;
+    }
+}
+
+.hero__title {
+    font-family: 'Canela Text Trial', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    text-align: center;
+    padding: 0 13px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 912px;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__title {
+        font-size: 100px;
+        line-height: 0.93;
+        padding: 0;
+        margin-bottom: 39px;
+    }
+}
+
+.hero__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin-bottom: 33px;
+    width: 100%;
+    max-width: 494px;
+}
+
+@media screen and (min-width: 1440px) {
+    .hero__description {
+        font-size: 18px;
+        line-height: 1.28;
+        letter-spacing: 0.07em;
+        margin-bottom: 58px;
+    }
+}
+
+.see-plans-btn {
+    background-color: #f74421;
+    border: none;
+    border-radius: 51px;
+    color: #fff;
+    padding: 12px 21px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.05;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+    .see-plans-btn {
+        margin-bottom: 0;
+    }
+}
+
+.hero__btn:hover {
+    background-color: #181818;
+
+}
+
+.book-a-call-btn {
+    border-bottom: 1px solid #181818;
+}
+
+@media screen and (min-width: 1440px) {
+    .book-a-call-btn {
+        display: none;
+    }
+}
