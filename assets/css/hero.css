@@ -54,7 +54,7 @@
 }
 
 .see-plans-btn {
-    background-color: #f74421;
+    /* background-color: #f74421;
     border: none;
     border-radius: 51px;
     color: #fff;
@@ -65,7 +65,7 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 1.05;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; */
     margin-bottom: 20px;
 }
 
@@ -73,11 +73,6 @@
     .see-plans-btn {
         margin-bottom: 0;
     }
-}
-
-.hero__btn:hover {
-    background-color: #181818;
-
 }
 
 .book-a-call-btn {

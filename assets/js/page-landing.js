@@ -52,6 +52,19 @@ document.addEventListener("DOMContentLoaded", function() {
 // Slider Swiper
 document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-plans', {
-      
+        slidesPerView: 1,
+        spaceBetween: 15,
+        autoHeight: true,
+        lazy: {
+          loadOnTransitionStart: true,
+          loadPrevNext: true,
+        },
+        lazyPreloadPrevNext: 1,
+        centeredSlides: true,
+        on: {
+            slideChangeTransitionStart: function() {
+              swiper.updateAutoHeight();
+            },
+          },
     });
   });

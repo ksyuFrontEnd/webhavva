@@ -228,3 +228,30 @@ input{
 .container {
   padding: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Canela Text Trial', sans-serif;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.orange-button {
+  background-color: #f74421;
+  border: none;
+  border-radius: 51px;
+  color: #fff;
+  padding: 12px 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.05;
+  transition: background-color 0.3s ease;
+}
+
+.orange-button:hover {
+  background-color: #181818;
+}
