@@ -215,7 +215,7 @@
 
 @media screen and (min-width: 360px) {
     .swiper-slide .plans__card {
-        height: 685px;
+        height: 732px;
     }
 }
 
@@ -258,7 +258,7 @@
     justify-content: space-between;
     align-items: center;
     height: 270px;
-    margin-bottom: 25px;
+    margin-bottom: 51px;
 }
 
 .card-title {
