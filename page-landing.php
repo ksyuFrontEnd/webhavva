@@ -40,8 +40,12 @@ get_header();
         <div class="container">
             <div class="plans__wrapper">
                 <div class="plans__upper">
-                    <div class="plans__section-number">05</div>
-                    <div class="plans__section-title">Plans</div>
+                    <div class="plans__section-number">
+                        <p>05</p>
+                    </div>
+                    <div class="plans__section-title">
+                        <p>Plans</p>
+                    </div>
                     <h2 class="plans__title">
                         <?php the_field("plans__title"); ?>
                     </h2>
