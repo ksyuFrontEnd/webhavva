@@ -4,8 +4,8 @@ if (!function_exists('webhavva_setup')) {
     {
         add_theme_support('custom-logo',
             array(
-                'height' => 64,
-                'width' => 64,
+                'height' => 29,
+                'width' => 72,
                 'flex-width' => true,
                 'flex-height' => true,
             )

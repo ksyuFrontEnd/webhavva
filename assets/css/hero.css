@@ -1,13 +1,14 @@
 .hero__wrapper {
-    margin: 69px 24px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 69px 24px 115px;
+    background-color: #efefed;
 }
 
 @media screen and (min-width: 1440px) {
     .hero__wrapper {
-        margin: 0 264px;
+        padding: 75px 264px 128px;
     }
 }
 
@@ -54,18 +55,6 @@
 }
 
 .see-plans-btn {
-    /* background-color: #f74421;
-    border: none;
-    border-radius: 51px;
-    color: #fff;
-    padding: 12px 21px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.05;
-    transition: background-color 0.3s ease; */
     margin-bottom: 20px;
 }
 
