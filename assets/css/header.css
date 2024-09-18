@@ -129,10 +129,11 @@
     .menu__body {
         position: relative;
         padding: 0;
-        /* left: 0;
-        height: 83px;
-        display: flex; */
-        /* justify-content: space-between; */
+        flex-direction: row;
+        justify-content: space-between;
+        transform: none;
+        width: 100%;
+        overflow: hidden;
     }
 
     .menu__body::before {
@@ -148,6 +149,7 @@
         align-items: center;
         justify-content: center;
         margin-left: 0;
+        margin-top: 0;
     }
 
     .menu-item {
@@ -160,5 +162,16 @@
 
     .menu-item:hover {
         color: #5E5E5B;
+    }
+
+    .menu__body-buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .contact-us-btn__header a {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.05;
     }
 }

@@ -281,21 +281,36 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   background-color: #f74421;
 } 
 
-/* Undelined button */
-.undelined-button {
-    border-bottom: 1px solid #181818;
+/* Undelined button  */
+.undelined-button__link {
+  position: relative;
 }
 
-.undelined-button:hover {
-  border-bottom: none;
+.undelined-button__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #181818;
+  transition: all 0.3s ease; 
+}
+
+.undelined-button__link:hover::before {
+  transform: scaleX(0); 
 }
 
 .undelined-button__link::after {
   content: url('./../images/arrow-right-black.svg');
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .undelined-button__link:hover::after {
   content: url('./../images/arrow-up-right-black.svg');
 }
 
+.undelined-button a:hover {
+  margin-right: 2px;
+}
