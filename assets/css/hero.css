@@ -1,3 +1,7 @@
+.hero-section {
+    margin-top: 40px;
+}
+
 .hero__wrapper {
     display: flex;
     flex-direction: column;

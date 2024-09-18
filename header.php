@@ -31,21 +31,22 @@
                                 'items_wrap'           => '<ul id="%1$s" class="menu_list %2$s">%3$s</ul>',  
                                 ] ); 
                         ?>
+                        <div class="menu__body-buttons">
+                            <button type="button" class="black-button book-a-call-btn__header">
+                                <a class="book-a-call-btn__link" href="#">
+                                    <?php the_field('book-a-call-btn__text', 'option'); ?>
+                                </a>
+                            </button>
+
+                            <button type="button" class="undelined-button contact-us-btn__header">
+                                <a class="undelined-button__link contact-us__link" href="#">
+                                    <?php the_field('contact-us__text', 'option'); ?>
+                                </a>
+                            </button>
+                        </div>
+                        
                     </nav>
                 </div>
-
-                <button type="button" class="black-button book-a-call-btn__header">
-                    <a class="book-a-call-btn__link" href="#">
-                        <?php the_field('book-a-call-btn__text', 'option'); ?>
-                    </a>
-                </button>
-
-                <button type="button" class="undelined-button contact-us__header">
-                    <a class="undelined-button__link contact-us__link" href="#">
-                        <?php the_field('contact-us__text', 'option'); ?>
-                    </a>
-                </button>
-
             </div>   
         </header>
             
