@@ -64,10 +64,6 @@
     }
 }
 
-.book-a-call-btn {
-    border-bottom: 1px solid #181818;
-}
-
 @media screen and (min-width: 1440px) {
     .book-a-call-btn {
         display: none;

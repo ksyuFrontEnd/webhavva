@@ -237,6 +237,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
+/* Orange button */
 .orange-button {
   background-color: #f74421;
   border: none;
@@ -255,3 +256,42 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 .orange-button:hover {
   background-color: #181818;
 }
+
+/* Black butto */
+.black-button {
+  background-color: #181818;
+  border: none;
+  border-radius: 52px;
+  padding: 13px 21px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.05;
+  transition: background-color 0.3s ease;
+}
+
+.black-button:hover {
+  background-color: #f74421;
+} 
+
+/* Undelined button */
+.undelined-button {
+    border-bottom: 1px solid #181818;
+}
+
+.undelined-button:hover {
+  border-bottom: none;
+}
+
+.undelined-button__link::after {
+  content: url('./../images/arrow-right-black.svg');
+  display: inline-block;
+}
+
+.undelined-button__link:hover::after {
+  content: url('./../images/arrow-up-right-black.svg');
+}
+

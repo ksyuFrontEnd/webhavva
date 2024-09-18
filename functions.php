@@ -25,6 +25,7 @@ function webhavva_scripts() {
     wp_enqueue_script('webhavva-scripts', get_template_directory_uri() . '/assets/js/page-landing.js', array(), false, true);
     wp_enqueue_style('swiper-style', "https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css", array('main'));
     wp_enqueue_script('swiper-scripts', 'https://cdn.jsdelivr.net/npm/swiper@10.0.0/swiper-bundle.min.js', array(), false, true);
+    wp_enqueue_script('header-scripts', get_template_directory_uri() . '/assets/js/header.js', array(), false, true);
 }
 
 /* Register menus */

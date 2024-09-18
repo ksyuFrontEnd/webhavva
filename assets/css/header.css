@@ -1,12 +1,20 @@
 .header {
-    background-color: #efefed;
-    padding: 21px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: lightblue;
 }
 
-.header__content {
+.header__container {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    padding: 21px 50px 21px 49px;
     align-items: center;
+    justify-content: space-between;
+    min-height: 83px;
 }
 
 .logo {
@@ -19,15 +27,62 @@
         width: 94px;
         height: 38px;
     }
-    
 }
 
-.header-menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #d9d9d9;
-    border-radius: 35px;
-    padding: 13px 0;
-    gap: 56px;
+.menu-item {
+    font-family: 'Canela Text Trial', sans-serif;
+    font-size: 24px;
+}
+
+ /* Мобільні стилі */
+/* .menu__icon {
+    cursor: pointer;
+}
+
+.menu__icon::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./../images/icon-menu.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+/* .menu-close {
+    cursor: pointer;
+}
+
+.menu-close::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('./../images/close-menu-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+@media screen and (min-width: 1440px) {
+    /* .menu__icon {
+        display: none;
+    } */
+
+    .menu_list {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item {
+        font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.05;
+        color: #b7b7b7;
+    }
+
+    .menu-item:hover {
+        color: #5E5E5B;
+    }
+
 }

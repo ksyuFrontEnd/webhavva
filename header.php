@@ -8,42 +8,44 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="container">
-                <div class="header__content">
-                    <div class="logo">
-                        <?php 
-                        if ( has_custom_logo() ) {
-                            echo get_custom_logo();
-                        }
-                        ?>
-                    </div>
-                
+            <div class="header__container">
+                <div class="logo">
                     <?php 
-
-                    $menu = wp_nav_menu( array(
-                    'theme_location' => 'header' ,
-                    'container'      => false ,
-                    'menu_class'     => 'header-menu' ,
-                    'menu_id'        => 'nav' ,
-                    'echo'           => true ,
-                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>' ,
-                    ));
-
-                    if ($menu) : ?>
-
-                    <nav class="menu-nav">
-                        <?php echo $menu; ?>
-                    </nav>
-
-                    <!-- Mobile burger -->
-                    <div class="menu-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <?php endif; ?>
+                    if ( has_custom_logo() ) {
+                        echo get_custom_logo();
+                    }
+                    ?>
                 </div>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <!-- .menu__icon::before -->
+                    </div>
+                    <nav class="menu__body">
+                        <?php 
+                            wp_nav_menu( [
+                                'theme_location'       => 'header',                          
+                                'container'            => false,    
+                                'menu_id'              => false,    
+                                'echo'                 => true,
+                                'depth'                => 0,       
+                                'items_wrap'           => '<ul id="%1$s" class="menu_list %2$s">%3$s</ul>',  
+                                ] ); 
+                        ?>
+                    </nav>
+                </div>
+
+                <button type="button" class="black-button book-a-call-btn__header">
+                    <a class="book-a-call-btn__link" href="#">
+                        <?php the_field('book-a-call-btn__text', 'option'); ?>
+                    </a>
+                </button>
+
+                <button type="button" class="undelined-button contact-us__header">
+                    <a class="undelined-button__link contact-us__link" href="#">
+                        <?php the_field('contact-us__text', 'option'); ?>
+                    </a>
+                </button>
+
             </div>   
         </header>
             
