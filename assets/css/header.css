@@ -26,7 +26,6 @@
 .logo {
     width: 72px;
     height: 29px;
-    z-index: 5;
 }
 
 @media screen and (min-width: 1440px) {
@@ -104,6 +103,7 @@
 
 .menu_list {
     margin-left: -50px;
+    margin-top: 50px;
 }
 
 .menu__body-buttons {
