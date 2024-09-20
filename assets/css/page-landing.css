@@ -311,6 +311,6 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   content: url('./../images/arrow-up-right-black.svg');
 }
 
-.undelined-button a:hover {
+/* .undelined-button a:hover {
   margin-right: 2px;
-}
+} */
