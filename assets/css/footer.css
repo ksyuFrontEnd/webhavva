@@ -194,7 +194,6 @@
 
     .footer__container {
         display: flex;
-        /* justify-content: space-between; */
         padding: 100px 42px 154px;
     }
 
@@ -217,6 +216,7 @@
     }
 
     .form__body {
+        width: 433px;
         margin-bottom: 0;
     }
 
@@ -229,16 +229,26 @@
         padding: 11px 0;
     }
 
+    .form__subscription-mobile span {
+        margin-right: 19px;
+        vertical-align: top;
+    }
+
     .form__subscription-mobile-text {
         display: none;
     }
 
     .form__subscription-desktop-text {
-        display: block;
+        display: inline-block;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.25;
         color: #efefed;
+    }
+
+    .contact-me-btn {
+        height: 41px;
+        margin-top: 15px;
     }
     /* end of form */
 
@@ -258,7 +268,6 @@
     .footer__bottom-policy p {
         font-size: 16px;
         color: #efefed;
-        /* font-stretch: condensed; */
     }
 
     /* Second column */
@@ -305,8 +314,6 @@
     /* footer menu and logo */
     .footer__menu {
         display: flex;
-        /* width: 487px;
-        gap: 240px; */
         gap: 105px;
     }
 
@@ -356,4 +363,3 @@
         object-fit: contain;
     }
 }
-
