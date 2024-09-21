@@ -314,6 +314,23 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   content: url('./../images/arrow-up-right-black.svg');
 }
 
-/* .undelined-button a:hover {
-  margin-right: 2px;
-} */
+/* Transparent button with white border */
+.transparent-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 51px;
+  padding: 12px 21px 13px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.05;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.transparent-button:hover {
+  background-color: #fff;
+  color: #181818;
+} 

@@ -17,6 +17,7 @@
     font-size: 45px;
     line-height: 1.11;
     color: #efefed;
+    margin-bottom: 62px;
 }
 
 .footer__title span {
@@ -24,10 +25,20 @@
     letter-spacing: -0.02em;
 }
 
+/* form */
 .footer__form {
-    display: flex;
+    margin-bottom: 108.4px;
+    /* display: flex;
     flex-direction: column;
-    gap: 36.6px;
+    gap: 36.6px; */
+}
+
+.form__body {
+    margin-bottom: 36.6px;
+}
+
+.form__input {
+    margin-bottom: 14px;
 }
 
 .form__input-field {
@@ -54,9 +65,9 @@
     border-bottom-color: #efefed;
 }
 
+/* custom checkbox */
 .form__subscription-mobile input[type="checkbox"] {
-    /* display: none; */
-    visibility: hidden;
+    display: none;
 }
 
 .form__subscription-mobile span {
@@ -67,6 +78,7 @@
     background-color: #181818;
     cursor: pointer;
     position: relative;
+    margin-right: 9px;
 }
 
 .form__subscription-mobile input[type="checkbox"]:checked + span {
@@ -85,6 +97,7 @@
     width: 13px;
     height: 14px;
 }
+/* end of custom checkbox---------- */
 
 .form__subscription-mobile-text {
     font-weight: 500;
@@ -93,25 +106,70 @@
     color: #d9d9d9;
 }
 
-
-
-.form__subscription-desktop {
+.form__subscription-desktop-text {
     display: none;
 }
 
-.footer__and-desktop {
-    display: none;
+/* social icons mobile */
+.footer__social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media screen and (min-width: 1440px) {
-    .footer {
-        border-radius: 30px 30px 0 0;
-    }
+.mobile-icons {
+    width: 191px;
+    margin-bottom: 7.6px;
+    padding: 0 4px;
+}
 
-    .footer__and-desktop {
-        display: flex;
-    }
-    
+.icon__twitter-mobile::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('./../images/twitter-icon-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon__instagram-mobile::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('./../images/instagram-icon-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon__mail-mobile::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url('./../images/mail-icon-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* end of social icons mobile */
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer__bottom-policy {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 191px;
+    padding: 0 4px;
+}
+
+.footer__bottom-policy p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #5E5E5B;
+    font-stretch: condensed;
 }
 
 /* Mobile logo */
@@ -127,15 +185,30 @@
     object-fit: contain;
 }
 
-/* Desktop logo */
-.footer__bottom-desktop-logo {
-    width: 147px;
-    height: 57x;
-    overflow: hidden;
+.footer__and-desktop {
+    display: none;
 }
 
-.footer__bottom-desktop-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+@media screen and (min-width: 1440px) {
+    .footer {
+        border-radius: 30px 30px 0 0;
+    }
+
+    .footer__and-desktop {
+        display: flex;
+    }
+    
+        /* Desktop logo */
+    .footer__bottom-desktop-logo {
+        width: 147px;
+        height: 57x;
+        overflow: hidden;
+    }
+
+    .footer__bottom-desktop-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    }
+

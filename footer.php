@@ -1,5 +1,6 @@
     <footer class="footer">
         <div class="footer__container">
+            <!-- Mobile -->
             <div class="footer__only-mobile">
                 <h2 class="footer__title"><?php the_field('footer__title', 'option'); ?></h2>
                 <form action="" class="footer__form form">
@@ -18,12 +19,16 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="form__button"></button>
+                    <button type="submit" class="form__button transparent-button contact-me-btn">
+                        <a class="contact-me-btn__link" href="#">
+                            <?php the_field('contact-me-btn__text', 'option'); ?>
+                        </a>
+                    </button>
                 </form>
-                <div class="footer__social-icons icons">
-                    <div class="icon__twitter"></div>
-                    <div class="icon__instagram"></div>
-                    <div class="icon__mail"></div>
+                <div class="footer__social-icons mobile-icons">
+                    <div class="icon__twitter-mobile"></div>
+                    <div class="icon__instagram-mobile"></div>
+                    <div class="icon__mail-mobile"></div>
                 </div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-policy">
@@ -39,12 +44,12 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Desktop -->
             <div class="footer__and-desktop">
-                <div class="footer__social-icons icons">
-                    <div class="icon__twitter"></div>
-                    <div class="icon__instagram"></div>
-                    <div class="icon__mail"></div>
+                <div class="footer__social-icons desktop-icons">
+                    <div class="icon__twitter-desktop"></div>
+                    <div class="icon__instagram-desktop"></div>
+                    <div class="icon__mail-desktop"></div>
                 </div>
                 <div class="footer__menu">
                     <nav class="footer__menu-body">
