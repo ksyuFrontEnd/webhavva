@@ -5,7 +5,7 @@
                 <form action="" class="footer__form form">
                     <div class="form__body">
                         <div class="form__input">
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" class="form__input-field" placeholder="Enter email adress*">
                         </div>
                         <div class="form__subscription-mobile">
                             <input type="checkbox">
