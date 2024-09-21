@@ -54,6 +54,45 @@
     border-bottom-color: #efefed;
 }
 
+.form__subscription-mobile input[type="checkbox"] {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.form__subscription-mobile span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #efefed;
+    background-color: #181818;
+    cursor: pointer;
+    position: relative;
+}
+
+.form__subscription-mobile input[type="checkbox"]:checked + span {
+    border-radius: 5px;
+}
+
+.form__subscription-mobile input[type="checkbox"]:checked + span::after {
+    content: '';
+    display: block;
+    background-image: url('./../images/subscribe-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 13px;
+    height: 14px;
+}
+
+.form__subscription-mobile-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.56;
+    color: #d9d9d9;
+}
+
 
 
 .form__subscription-desktop {

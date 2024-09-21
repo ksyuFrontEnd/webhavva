@@ -7,17 +7,15 @@
                         <div class="form__input">
                             <input type="email" id="email" name="email" class="form__input-field" placeholder="Enter email adress*">
                         </div>
-                        <div class="form__subscription-mobile">
-                            <input type="checkbox">
-                            <p class="form__subscription-mobile-text">
+                        <div class="form__subscription-mobile" id="custom_checkbox">
+                            <input type="checkbox" id="subscription" name="subscription" value="Yes">
+                            <span></span>
+                            <label for="subscription" class="form__subscription-mobile-text">
                                 <?php the_field('form__subscription-mobile-text', 'option'); ?>
-                            </p>
-                        </div>
-                        <div class="form__subscription-desktop">
-                            <input type="checkbox">
-                            <p class="form__subscription-desktop-text">
+                            </label>
+                            <label for="subscription" class="form__subscription-desktop-text">
                                 <?php the_field('form__subscription-desktop-text', 'option'); ?>
-                            </p>
+                            </label>
                         </div>
                     </div>
                     <button type="submit" class="form__button"></button>
