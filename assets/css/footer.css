@@ -28,9 +28,6 @@
 /* form */
 .footer__form {
     margin-bottom: 108.4px;
-    /* display: flex;
-    flex-direction: column;
-    gap: 36.6px; */
 }
 
 .form__body {
@@ -43,6 +40,7 @@
 
 .form__input-field {
     width: 100%;
+    max-width: 360px;
     padding: 7px 0;
     border: none;
     border-bottom: 1px solid #5E5E5B;
