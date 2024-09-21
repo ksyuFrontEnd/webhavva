@@ -192,15 +192,162 @@
         border-radius: 30px 30px 0 0;
     }
 
-    .footer__and-desktop {
+    .footer__container {
         display: flex;
+        /* justify-content: space-between; */
+        padding: 100px 42px 154px;
+    }
+
+    .footer__only-mobile {
+        width: 50%;
+    }
+
+    .footer__title {
+        font-size: 95px;
+        line-height: 0.94;
+        margin: 0 0 84px 5px;
+    }
+
+    /* form */
+    .footer__form {
+        margin: 0 0 130px 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 598px;
+    }
+
+    .form__body {
+        margin-bottom: 0;
+    }
+
+    .form__input {
+        margin-bottom: 42px;
+    }
+
+    .form__input-field {
+        max-width: 428px;
+        padding: 11px 0;
+    }
+
+    .form__subscription-mobile-text {
+        display: none;
+    }
+
+    .form__subscription-desktop-text {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.25;
+        color: #efefed;
+    }
+    /* end of form */
+
+    .mobile-icons, .footer__bottom-mobile-logo {
+        display: none;
+    }
+
+    .footer__bottom-policy {
+        display: flex;
+        align-items: flex-end;
+        width: 293px;
+        padding: 0;
+        margin-left: 10px;
+        gap: 96px;
     }
     
-        /* Desktop logo */
+    .footer__bottom-policy p {
+        font-size: 16px;
+        color: #efefed;
+        /* font-stretch: condensed; */
+    }
+
+    /* Second column */
+    .footer__and-desktop {
+        display: flex;
+        flex-direction: column;
+        margin: 373px 0 0 186px;
+    }
+
+    /* social icons desktop */
+    .desktop-icons {
+        width: 200px;
+        margin-bottom: 90px;
+    }
+
+    .icon__twitter-desktop::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('./../images/twitter-icon-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .icon__instagram-desktop::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('./../images/instagram-icon-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .icon__mail-desktop::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('./../images/mail-icon-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* footer menu and logo */
+    .footer__menu {
+        display: flex;
+        /* width: 487px;
+        gap: 240px; */
+        gap: 105px;
+    }
+
+    .footer__menu-body {
+        display: flex;
+    }
+
+    .footer__menu-list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 110px;
+        width: 240px;
+    }
+
+    .footer__menu-list .menu-item {
+        text-transform: uppercase;
+        padding: 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.79;
+        text-align: start;
+        color:  #efefed;
+        cursor: pointer;
+        border-radius: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .footer__menu-list .menu-item.active {
+        background-color: #181818;
+        color: #5E5E5B;
+    }
+    
+    /* Desktop logo */
     .footer__bottom-desktop-logo {
         width: 147px;
         height: 57x;
         overflow: hidden;
+        align-self: flex-end;
+        padding-bottom: 10px;
     }
 
     .footer__bottom-desktop-logo img {
@@ -208,5 +355,5 @@
         height: 100%;
         object-fit: contain;
     }
-    }
+}
 
