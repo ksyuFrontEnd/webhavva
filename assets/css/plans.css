@@ -185,9 +185,9 @@
 /* Buttons */
 .plans__bar {
     position: relative;
+    display: flex;
     border: 1px solid #181818;
     border-radius: 25px;
-    display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 484px;
@@ -202,63 +202,87 @@
     }
 }
 
-.plans__bar::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 33.33%;
-    background-color: #F74421;
-    transition: transform 0.3s ease;
-    z-index: -1;
+@media screen and (min-width: 1440px)  {
+    .plan-btn {
+        position: relative;
+        padding: 15px 20px 15px 50px;
+        background-color: transparent;
+        border: none;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.05;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #5e5e5b;
+        cursor: pointer;
+        transition: color 0.3s;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        outline: none;
+    }
+    
+    .plan-btn__text {
+        display: block;
+    }
+    
+    .plan-btn__discount {
+        font-weight: 500;
+        font-size: 9px;
+        line-height: 1.57;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #f74421;
+        border: 1px solid #f74421;
+        border-radius: 87px;
+        padding: 1px 5px;
+        margin-left: 5px;
+    }
+    
+    .plan-btn:hover .plan-btn__discount {
+        color: white;
+        border: 1px solid white;
+        
+    }
+    
+    .plans__bar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 33.33%;
+        background-color: #F74421;
+        transition: left 0.3s ease;
+        border-radius: 87px;
+    }
+    
+    .plan-btn:hover {
+        color: white; 
+    }
+    
+    .plan-btn.active {
+        color: white;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .plan-btn.active .plan-btn__discount {
+        color: white;
+        border: 1px solid white;
+    }
+    
+    .plans__bar {
+        --bg-left: 0%; 
+    }
+    
+    .plans__bar::before {
+        left: var(--bg-left); 
+    }
 }
 
-.plan-btn {
-    position: relative;
-    padding: 15px 52px;
-    background: none;
-    border: none;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 1.05;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #5e5e5b;
-    cursor: pointer;
-    overflow: hidden;
-    transition: color 0.3s;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.plan-btn.active {
-    background-color: #F74421;
-    color: white;
-    z-index: 1;
-    position: relative;
-    box-shadow: 0 0 0 1px #F74421;
-}
-
-.plan-btn__discount {
-    font-weight: 500;
-    font-size: 9px;
-    line-height: 1.57;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #f74421;
-    border: 1px solid #f74421;
-    border-radius: 87px;
-    padding: 1px 5px;
-}
-
-.plan-btn.active .plan-btn__discount {
-    color: white;
-    border: 1px solid white;
-}
 
 /* Plans */
 .plans__container {
