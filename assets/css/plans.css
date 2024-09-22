@@ -1,3 +1,70 @@
+.plans-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0 47px;
+}
+
+.plans-marquee__text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: plans-marquee 60s linear infinite;
+}
+
+.plans-marquee__text span {
+    font-family: 'Canela Text Trial', sans-serif;;
+    font-weight: 300;
+    font-size: 75px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: #181818;
+    position: relative;
+    padding: 0 40px 0 20px;
+}
+
+.plans-marquee__text span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 10px;
+    background-image: url('./../images/marquee-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes plans-marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .plans-marquee {
+        padding: 50px 0 106px;
+    }
+
+    .plans-marquee__text span {
+        padding: 0 75px 0 40px;
+    }
+
+    .plans-marquee__text span {
+        font-size: 180px;
+    }
+
+    .plans-marquee__text span::after {
+        height: 28px;
+        width: 29px;
+    }
+}
+
 .plans__wrapper {
     background-color: #efefed;
     border-radius: 35px;

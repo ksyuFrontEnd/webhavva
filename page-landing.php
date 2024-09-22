@@ -35,6 +35,20 @@ get_header();
     <!-- Plans section -->
     <section id="plans" class="plans-section section">
         <div class="container">
+            <div class="plans-marquee">
+                <div class="plans-marquee__text">
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                    <span>Our plans</span>
+                </div>
+            </div>
             <div class="plans__wrapper">
                 <div class="plans__upper">
                     <div class="plans__section-number">
