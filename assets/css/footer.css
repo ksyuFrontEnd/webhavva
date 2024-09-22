@@ -10,6 +10,7 @@
 .footer__only-mobile {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .footer__title {
@@ -102,6 +103,28 @@
     font-size: 16px;
     line-height: 1.56;
     color: #d9d9d9;
+}
+
+.form__error-message {
+    color: #f74421;
+    font-size: 12px;
+    display: none;
+}
+
+.form__input-field-error {
+    border: 1px solid #f74421;
+    border-radius: 97px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.form__success-message {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .form__subscription-desktop-text {
@@ -249,6 +272,10 @@
     .contact-me-btn {
         height: 41px;
         margin-top: 15px;
+    }
+
+    .form__success-message {
+        top: 430px;
     }
     /* end of form */
 

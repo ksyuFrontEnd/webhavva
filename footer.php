@@ -3,10 +3,11 @@
             <!-- Mobile -->
             <div class="footer__only-mobile">
                 <h2 class="footer__title"><?php the_field('footer__title', 'option'); ?></h2>
-                <form action="" class="footer__form form">
+                <form action="" class="footer__form form" id="footerForm">
                     <div class="form__body">
                         <div class="form__input">
-                            <input type="email" id="email" name="email" class="form__input-field" placeholder="Enter email adress*">
+                            <input type="text" id="email" name="email" class="form__input-field" placeholder="Enter email adress*" required>
+                            <small class="form__error-message" id="emailError">Please enter a valid email.</small>
                         </div>
                         <div class="form__subscription-mobile" id="custom_checkbox">
                             <input type="checkbox" id="subscription" name="subscription" value="Yes">
@@ -17,14 +18,14 @@
                             <label for="subscription" class="form__subscription-desktop-text">
                                 <?php the_field('form__subscription-desktop-text', 'option'); ?>
                             </label>
+                            <small class="form__error-message" id="checkboxError">You must agree to the subscription.</small>
                         </div>
                     </div>
                     <button type="submit" class="form__button transparent-button contact-me-btn">
-                        <a class="contact-me-btn__link" href="#">
                             <?php the_field('contact-me-btn__text', 'option'); ?>
-                        </a>
                     </button>
                 </form>
+                <div class="form__success-message" id="successMessage" style="display: none">Thank you!<br />We will contact you as soon as possible!<br />Have a nice day!</div>
                 <div class="footer__social-icons mobile-icons">
                     <div class="icon__twitter-mobile"></div>
                     <div class="icon__instagram-mobile"></div>
