@@ -6,7 +6,7 @@ document.querySelector('#custom_checkbox span').addEventListener('click', functi
     
 });
 
-// Validation of form
+// Form validation
 document.getElementById('footerForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
