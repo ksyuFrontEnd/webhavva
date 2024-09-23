@@ -68,22 +68,20 @@ get_header();
                     </button>
 
                     <button id="quarterly-btn" type="button" class="plan-btn" data-plan="quarterly">
-                        <span class="plan-btn__text"><?php the_field("quarterly_plan__text"); ?></span>
+                        <span class="plan-btn__text plan-btn__text-quarterly"><?php the_field("quarterly_plan__text"); ?></span>
                         <div class="plan-btn__discount">
                             <?php the_field("quarterly_plan__discount"); ?>
                         </div>
                     </button>
 
                     <button id="annual-btn" type="button" class="plan-btn" data-plan="annual">
-                        <span class="plan-btn__text"><?php the_field("annual_plan__text"); ?></span>
+                        <span class="plan-btn__text plan-btn__text-annual"><?php the_field("annual_plan__text"); ?></span>
                         <div class="plan-btn__discount">
                             <?php the_field("annual_plan__discount"); ?>
                         </div>
                     </button>
                 </div>
 
-
-                
                 <div class="plans__container">
 
                     <!-- Mobile -->

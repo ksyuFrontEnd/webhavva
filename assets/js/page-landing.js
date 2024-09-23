@@ -69,23 +69,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-
-
+  
 //  Orange buttons
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll('.plan-btn');
     const plansBar = document.querySelector('.plans__bar');
-    const barBackground = plansBar.querySelector('::before');
 
-    // Додаємо слухач подій на кожну кнопку
     buttons.forEach((button, index) => {
-        button.addEventListener('mouseenter', () => moveBackground(index));
         button.addEventListener('click', () => moveBackground(index));
     });
 
     function moveBackground(index) {
-        const leftPosition = (index * 33.33) + '%'; // Кожна кнопка займає 33.33% простору
-        plansBar.style.setProperty('--bg-left', leftPosition);
+        if (window.innerWidth < 1440) {
+            const topPosition = (index * 33.33) + '%';
+            plansBar.style.setProperty('--bg-top', topPosition);
+        } else {
+            const leftPosition = (index * 33.33) + '%';
+            plansBar.style.setProperty('--bg-left', leftPosition);
+        }
     }
 });
 
