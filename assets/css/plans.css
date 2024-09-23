@@ -193,6 +193,7 @@
     max-width: 484px;
     margin-bottom: 68px;
     z-index: 1;
+    padding: 1px;
 }
 
 .plans__bar::before {
@@ -206,7 +207,8 @@
     border: 1px solid #F74421;
     transition: top 0.3s ease;
     border-radius: 87px;
-    z-index: 1;
+    z-index: 0;
+    box-shadow: 0 0 0 1.1px #F74421;
 }
 
 .plan-btn {
@@ -278,6 +280,8 @@
         height: 100%;
         width: 33.33%;
         transition: left 0.3s ease;
+        border-radius: 24px;
+        box-shadow: 0 0 0 1.2px #F74421;
     }
 
     .plan-btn {
@@ -291,7 +295,7 @@
     .plan-btn__text-annual {
         margin-left: -10px;
     }
-    
+
     .plans__bar {
         --bg-left: 0%; 
     }
@@ -300,6 +304,7 @@
         left: var(--bg-left); 
     }
 }
+
 
 /* Plans */
 .plans__container {
