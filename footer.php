@@ -27,9 +27,15 @@
                 </form>
                 <div class="form__success-message" id="successMessage" style="display: none">Thank you!<br />We will contact you as soon as possible!<br />Have a nice day!</div>
                 <div class="footer__social-icons mobile-icons">
-                    <div class="icon__twitter-mobile"></div>
-                    <div class="icon__instagram-mobile"></div>
-                    <div class="icon__mail-mobile"></div>
+                    <div class="icon__twitter-mobile">
+                        <a href="https://x.com/"></a>
+                    </div>
+                    <div class="icon__instagram-mobile">
+                        <a href="https://www.instagram.com/ksyusha_baranik/"></a>
+                    </div>
+                    <div class="icon__mail-mobile">
+                        <a href="mailto:ksyubaranik@gmail.com"></a>
+                    </div>
                 </div>
                 <div class="footer__bottom">
                     <div class="footer__bottom-policy">
@@ -48,9 +54,15 @@
             <!-- Desktop -->
             <div class="footer__and-desktop">
                 <div class="footer__social-icons desktop-icons">
-                    <div class="icon__twitter-desktop"></div>
-                    <div class="icon__instagram-desktop"></div>
-                    <div class="icon__mail-desktop"></div>
+                    <div class="icon__twitter-desktop">
+                        <a href="https://x.com/" target="_blank"></a>
+                    </div>
+                    <div class="icon__instagram-desktop">
+                        <a href="https://www.instagram.com/ksyusha_baranik/" target="_blank"></a>
+                    </div>
+                    <div class="icon__mail-desktop">
+                        <a href="mailto:ksyubaranik@gmail.com" target="_blank"></a>
+                    </div>
                 </div>
                 <div class="footer__menu">
                     <nav class="footer__menu-body">

@@ -144,7 +144,7 @@
     padding: 0 4px;
 }
 
-.icon__twitter-mobile::before {
+.icon__twitter-mobile a::before {
     content: '';
     display: block;
     width: 25px;
@@ -153,7 +153,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.icon__instagram-mobile::before {
+.icon__instagram-mobile a::before {
     content: '';
     display: block;
     width: 25px;
@@ -162,7 +162,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.icon__mail-mobile::before {
+.icon__mail-mobile a::before {
     content: '';
     display: block;
     width: 25px;
@@ -310,7 +310,7 @@
         margin-bottom: 90px;
     }
 
-    .icon__twitter-desktop::before {
+    .icon__twitter-desktop a::before {
         content: '';
         display: block;
         width: 30px;
@@ -319,7 +319,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .icon__instagram-desktop::before {
+    .icon__instagram-desktop a::before {
         content: '';
         display: block;
         width: 30px;
@@ -328,7 +328,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    .icon__mail-desktop::before {
+    .icon__mail-desktop a::before {
         content: '';
         display: block;
         width: 30px;
